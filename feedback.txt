@@ -1,0 +1,636 @@
+Feedback from Playable Media
+________________________________________________________________________________________________________
+
+Hope 
+
+I think you have a strong and universally interesting idea for the narrative.  I think we are all interested in the story of where we came from and the immigrant story is especially compelling, and in a broad way, given our current political climate.
+
+A few things I noticed:
+
+1.  I like when you have an image/graphic on the page.  However, I had a hard time seeing them and when I clicked one hoping to look at it more closely, it brought me to another page.  Because I couldn’t really see it, I had a hard time making a connection between the image and the page it connected me to.
+
+2.  I was not able to follow any one story very well.  I was kind of confused by the mixture of Portuguese and English options.  It occurs to me that this mixing of the language is something that for children of immigrant parents is completely natural.  So maybe that is your intention?
+
+________________________________________________________________________________________________________
+
+Johnathan
+
+We talked at some point about this project, although I wasn't expecting to play it for Playable Media.
+
+One thing I distinctly remember from our talk about Hypertext last quarter was that there is a strong element of discovery involved.  Part of the joy of playing with hypertext is clicking on the links and exploring the story, slowly uncovering the world by taking multiple passes through the narrative.  By sticking half of the text in another language, you've amped up the feeling of discovery-- especially when I finally thought I had a handle on a word from getting some new context about a sentence from another story part.  Plus, once I had thought I had teased meaning from a word, I'd want to play again with my new-found knowledge and see if I could get another chunk of the story.
+
+I am not brave enough to critique your writing.  I'm sorry, but with a chunk of the text in another language, I don't feel comfortable trying to talk about your writing style.  I didn't notice any obvious mistakes in the English sections, at the very least.  The story itself is interesting, or, at least as much as I could tease out.  It was worth it enough to go back through several times and try to and understand more Portuguese to understand more story.
+
+I did notice a minor bug-- on the exercises that require you to drag words to make a sentence, they don't always drag nicely.  You can usually finagle it to make the sentence you want, but it's a little annoying.  Also, I ended up managing to make a circle in the story, which may or may not be intentional.  I don't actually remember how I did it, but I did do it (I'm being helpful!).
+
+Finally, although I really like the element of discovery here, it does have a higher barrier of difficulty and some time investment to really try to tease out the meaning of words.  If you're not in it to win it, I feel like the first playthrough doesn't give you enough of the story to draw you in.  It was only my third time through I started getting into the story, which feels like two times too many.
+
+Anyway, neat project!  You'll hear more about it from me on Thursday.
+
+________________________________________________________________________________________________________
+
+Marcelo
+
+I’m going to concentrate on language feedback because I think it’s the best way I can be of use to you for your critique. I attached the json file with my comments. I tried to be pretty thorough but I may have missed something (more on why later). Also, don’t take the comments as “corrections.” Most of it was just little changes to make it flow better or so it has the right tone. Portuguese is a strange language.
+
+I’ll be honest, this was HARD. Translation is hard but your piece is also poetic and a lot of the meaning I’m inferring from context which makes it even more difficult. I tried to do the best I could but some of the comments will say “I need more to help you here.”
+
+And your piece really screws with my brain. I need to think more about it and hopefully I’ll be able to articulate it better tomorrow but I still feel just like that first impression it had on me that I talked to you about even though I’ve seen it multiple times now. It's the way you’re mixing language and sequencing the passages, my brain doesn’t know how to parse it, yet it’s parsing everything just fine. It’s almost like it’s a third language. Super interesting and incredibly “disorienting” in the Wes-ian sense. :)
+
+The third component that made it difficult is that you’re dealing with a subject matter that is close to my heart. The relationship between language, memory, family, place, and identity. I’m not sure how autobiographical the piece is, but I can imagine these questions being difficult to deal with and they echo a lot of things I’ve gone through since I moved here. I hope that working on this is a fruitful experience for you.
+
+Hope this is helpful. Let me know if you have questions, specific to language or not.
+
+_______________________________________________________________________________________________________
+
+Joe Mazeika
+
+First and foremost, I'm going to start off by saying that I don't speak or read even the slightest bit of Portuguese. That said, I feel like I've managed to pick out a little bit here and there.
+
+I liked the conceit of the  Duolingo-eqse language learning software, however, the biggest piece that was missing for me was the fact that none of the 'lessons' ever displayed their solutions - and I feel like even getting a translation for one or two of words (perhaps chosen at random?) during a playthrough would help, at least with the conceit, and maybe with some of the understanding of some of the less-obvious words.
+
+I played through a couple of times, and I'm probably going to go back and do a feel more - and hopefully, I'll be able to grok more and more of this story that you've given us.
+
+_______________________________________________________________________________________________________
+
+Matthew Balousek
+
+I feel a little weird about any interpretations I have of the game, because they’re so heavily predicated on this exact path I took that places the boundary between muddling and (machine) translation as a turning point in the story.
+
+The choices and images of "boat/plane”, "myself/my mother" all gave me the initial impression of an immigration made in early childhood that someone is now reflecting on, albeit in a very scattered way.
+
+I unconsciously only made choices that I had some understanding of what their tag indicated, but this wound up ending the story very frequently. The experience was confusing, certainly.
+
+There’s a sort of strangeness to the language exercise portions. In a purely technical sense the drag-to-make-a-sentence part was slightly finicky with me when I tried to place words in a certain slot, but my main issue was that I wasn’t exactly clear how my performance there was affecting navigation. Well, I guess it was more that I was going into it blind and I had no clue what it would or wouldn’t do.
+
+After a while I switched on machine translation—which I think is an intended way of playing? There’s a sort of barrier there that after flipping that switch the game and its behavior felt radically different to me. Suddenly my impression of the story changed dramatically because all this information that was blacked out for me was suddenly illuminated by the dim candle of machine translation.
+
+My impression shifted that the choices were largely about remembering or misremembering events, and the repeated ending becomes (I think?) a goodbye as the narrator leaves Brazil to return to America.
+
+I have a hard time engaging with the piece on the level of the fiction or narrative; instead the process of coming to an understanding of the words or the scenarios is the thing that stands out to me. I like how that knowledge is sort of grown slowly.
+
+I’m interested in hearing a.) how you intend folks to approach the piece and whether the machine-translation element is something that you want players to do and b.) how the piece reads when someone actually knows everything that’s being said.
+
+_______________________________________________________________________________________________________
+
+Squinky
+
+As you know: my perspective is that of someone who doesn't know Portuguese, but knows a little bit about romance language structures through French, and is familiar with the kind of linguistic switching that you demonstrate in your writing. For this reason, I really like the idea behind piece and what you're trying to get at with it. (the impersonal weirdness of language learning software and the difficult sense of simultaneously belonging and not-belonging to your family's culture)
+
+The one hurdle I think you're running across is conveying your own proficiency (or lack thereof) to an audience that either understands way less Portuguese than you do, or way more. I will focus on the former experience, as that mirrors my own, though I'd figure there would be interesting challenges being faced by native Portuguese speakers reading your work. But anyhow.
+
+By not knowing the language, I did have a persistent feeling that I was missing a lot of the finer details of the content -- and I wanted to see these details, because your writing is really good at conveying a particular sense of time and place! Running your game through Google Translate (because, you know, I had to try it) confirmed that I was correct. So a question I have is this: do you want people to use Google Translate or other such tools, or do you discourage it? I found that there was a weird glitchiness when playing the game this way (English words would be mistranslated, capitalization and punctuation would get wonky). I wonder if built-in functionality to switch between languages (turn all English into Portuguese and vice versa) would help while still preserving the essential bilingual-ness of your story. I also wonder whether little translation tooltips should come up when you mouse over a sentence.
+
+It was hard to tell whether the POV character was you or your mother -- I'm guessing this was partly intentional, and it might have had a stronger effect had I been familiar with both languages, but since I'm not, I think it made me feel more lost. I liked how in your piece from last year, divergent story threads changed colour, and I wonder whether something similar could be applied here.
+
+I felt like I was missing feedback on how I did in the non-multiple-choice exercises. Not necessarily in the "right" or "wrong" sense, but some interesting story-related way of acknowledging my input so that it didn't feel like I could just throw anything on there.
+
+I also found the "rearrange words to form a sentence" parts really finicky, interface-wise -- no, I want "the" to go before "neighbourhood", not after! Tweaking the way that feels would be a good idea.
+
+Oh, and also: the graphic design is spot on and perfect. From a purely aesthetic standpoint, I think you've nailed it.
+
+Really excited to see where you go from here on out!
+
+_______________________________________________________________________________________________________
+
+Adam Summerville
+
+I thought the piece was quite successful.  That being said, you were right and I was quite confused the first time I played it.  The first time I went through, I sort of guessed at what to choose and quickly wound up at the replay screen.  On my subsequent playthroughs I actually translated the text and chose the ones that seemed to make sense or were interesting and wound up getting some very good stories; However, I did run into a couple of loops which sort of broke the mood.  There was also one playthrough that seemed to going along nicely that ended abruptly, and it just sort of confused me.  
+
+_______________________________________________________________________________________________________
+
+Sarah Fay Krom
+
+This is a great idea, intertwining language learning with interactive fiction.  
+
+I’ll mention the technical stuff first: I tried both Firefox and Chrome and was not able to hear any sound. So not sure what I may have been doing wrong. Second, in the spots where I could build a sentence, there were times when it didn’t let me tack a word onto the front or back; I had to first get it into the gray area (anywhere but at the front or back) and then reposition it from there. Sometimes it would give the black dotted outline and other times it wouldn’t (mostly when I tried to add to front or back). It seemed to be that after three words, this problem would kick in. In the “translate the sentence” areas I was simply typing in what I could make out of the English fuzzy words. This isn’t really a technical issue - it was just that I wasn’t savvy enough with the Portuguese to decipher it. Will there be feedback on either of these activities and if so, what form would it take (i.e. within where it takes you in the story)?
+
+I played it through several times, all as “myself” and once as “my mother”. The storyness of it grew on me. Initially I was very confused and really not sure which direction to go so I selected more out of chance than anything. This could be a lack of experience with interactive fiction (i.e. the ways it can be written) or my desire for more literalness (making it a completely subjective comment). But I became more intrigued after the next several play throughs.  I already know some Spanish so there were similar words that I relied on in terms of understanding non-English.  In the process of playing I may have picked up on a few more words, but not enough to feel I was making great progress in understanding the story. So I’m back to whether the story itself is harder for my very literal brain, or whether my lack of language causes confusion. Because there is this learning side to it, I’m not sure what your thoughts are on the level of difficulty - on one hand in translation, on another from a literary perspective. After playing the “mother” side I felt compelled to go back to “myself” to see if sticking to one side of the story would help my progress (i.e. switching to the mother made me feel like I was starting from square one in understanding - even though that’s probably not the case).
+
+But as I said, I really like the idea and the framework for learning language in this way is very compelling.
+
+_______________________________________________________________________________________________________
+
+James Ryan
+
+Awesome piece! Here's my general thoughts, followed by some notes I jotted down while playing.
+At first, it felt like a puzzle and I was really confused. As I played more, and especially after I started using Google translate, it started to feel less like a puzzle and more like collaborative storytelling. I was still sort of confused, but that didn't really concern me anymore.
+Actually 'collaborative storytelling' isn't the right term. I was choosing options that were poetically interesting to me, but it felt more like probing at the underlying story/ies than collaborating in the telling of a developing story.
+While I initially didn't recognize any coherent story, the more I played, the more I felt I converged on it. I see the story here as this many-faceted underlying thing that you get peeks at, from all sorts of angles, through the surface texts. (That's true of any media artifact, but I especially got that sense here, probably mostly due to the experience of reading multiple expressions -- in English and Google-translated Portuguese -- of the same underlying form.) It took several playthroughs for me to stop puzzling over the structure and the nature of my choices.
+I love how the language-learning-software idiom evokes and supports the thematic charge of the piece. This took me a bit to grasp, but after soaking up more of the underlying story, I realized that it was priming me to empathize with the experience of being inadequate in a language, which seems to be a central concern of the piece thematically.
+Though it's structurally much different, it felt a lot like It Had To Be With You, and I ended up playing it like that piece is naturally played. The story is sort of streaming -- not quickly, in this piece; I'm in control in that sense -- and I make choices that affect which segments get streamed, but I can't anticipate or even understand how exactly my choices affect the streaming.
+I'm curious about the underlying decision making that the system is doing in terms of choosing the next screen at any point. Is it keeping track of state and reasoning about that in any way?
+I wonder what it would be like to play this if I were also a native speaker of Portuguese. I suspect I wouldn't be able to have the experience you're intending to invoke. I'm glad I played without translating the first few times.
+
+	FIRST PLAYTHROUGH
+- chose not to Google-translate the Portuguese
+- very confused at first:
+	-- some mixed-language options; one purely Portuguese option.
+	-- picked options with most poetically appealing English phrases.
+
+	SECOND PLAYTHROUGH
+- again will not translate
+- got an image task, also a build-a-sentence-task (realizing now that I got no such tasks my first playthrough) 
+	-- thought a while on the latter while putting the sentence together; was kind of hoping to get feedback on my sentence after, but did not
+
+	THIRD PLAYTHROUGH
+- this one seemed much shorter than the second, and again no tasks.
+
+	FOURTH PLAYTHROUGH
+- Google-translating this time.
+- Found the differences between the two paragraphs on the start screen interesting. Particularly this: "Maybe you're right, but this is the quiz" vs. "Maybe going to work, but this is not proof". Assuming one of them is a translation of the other, I like having two text representations of the underlying semantics.
+- It's a much different experience using Google translate. I feel like I have more of a grip of what's going on, and I'm less concerned with trying to figure it out.
+- Some humorous mistranslations: "He drank the much red wine" (story of my life)
+
+	FIFTH PLAYTHROUGH
+- Google-translating again.
+- I'm now interacting with it as a collaborative storytelling tool.
+
+	SIXTH PLAYTHROUGH+
+- Actually, I'm not attempting to collaborate that actively -- I'm more in a process of soaking up the story gradually.
+
+_______________________________________________________________________________________________________
+
+Wes
+
+I immediately liked it. Disorienting, one of my favorite feelings!
+
+First an lolz: Google immediately offered to translate it for me which would of course spoil all the fun. But le sigh. Modern times.
+
+The backgrounds are great. It does bring to mind the aesthetics of a language learning program. How did you do that?
+Ooo, just replayed and got a little form to translate a sentence. I love the blurred out region that is sneakily changing.
+I like the non-refreshing javascript action. What did you use for that?
+I also just got to a place where the words were read to me. Love it.
+A suggestion: Rather than "play again," which is often a place where people quit, what if the game used the metaphor of a language learning system and offered to advance you to the next level? Which of course would start with a review, that might look similar to the previous unit -- an opportunity to start the story again. 
+Built into language learning systems often is some form of evaluation. If this could be worked into the story, it might both be playful allusion and goo storytelling.
+Is the text I type used in the narrative? I would like that. I wanted to know that the effort I spent in these interactive moments contributed to the story and was not thrown away.
+I love the branching story structure, though I am unclear if it is a tree or a net or more procedurally arbitrary.
+I played it at least a dozen times and each time discovered a new element
+I saw: Drag to create a sentence, type what you hear, identify the photo of X, translate the sentence
+
+_______________________________________________________________________________________________________
+
+Adrian Phillips
+
+Here is my critique/feedback for your piece, hope it's not too rambly:
+
+I will try to give you a sense for what the experience was like for me, what my general opinions were, and what seems to be working and what was confusing for me.
+My overall impressions of the piece are that it is dealing with issues of cultural (and language) heritage, and that it attempts to understand this cultural exchange from multiple perspectives. There is  the 'myself' character, and the mother character. I get a strong sense of the frustration of translations. I attempt to navigate the space which is a jumble of words I understand and words that I do not understand. The scene on the plane was particularly evocative for this, as it evoked a sense of attempting to ask for something to drink from the steward(ess) but having difficulty finding the words. It's already difficult and awkward ordering a drink on a plane, so I feel it puts the viewer in this mindset. As a bilingual French speaker, elements such as this brought out a strong sense of jumbling/juggling languages in order to create a semi-cohesive whole when you don't know all of the words in the language you are trying to use. This is partly from my experiences and partly from observing my relatives attempt to speak English which often becomes a combination of the two languages.
+Beyond the language disconnect, there is a sense that a cultural disconnect (or attempt to reconnect) is also going on. The phrase "I know them in weeks, in fits and starts" was particularly powerful for me, as it also connected with my personal experiences. There is a sort of privilege of the 'visitor' coming from another place (I assume America in this case), visiting, and then leaving. The space left behind is almost frozen in time, as are the people there.
+Those are my overall impressions, and I'd like to address a few specific elements for feedback as well, some of them more formal than others. The first screen subverted my expectations through selecting the opposite phrase than what I attempted to select. This was effectively disorienting, but the 'hand' cursor was distracting since clicking it did not actually take me anywhere. This broke the circle for me a bit, since I was not sure if it was deliberate or not.
+I'm still deciding what I think of the word selection/sentence creation part. In general I think this is because I found myself trying to figure out the system and game it. When dragging words into the box, they seemed to get pulled to certain parts, which were often not where I wanted them to be. This again took me out of the experience a bit. Having said that, it was exciting to have a little more agency within the space (or so it felt like), and gave more room for exploration.
+A small element, but I really enjoyed the background for the airplane scene. It was abstract enough, yet evocative enough in the context of the text to provide a sense of the environment. Those endless blue airplane seats you are stuck on for hours on end when travelling. Awful.
+I played through the game about five times, and I played it two ways primarily. My first two run throughs were simply exploring what felt like the story/experience paths of the mother/myself. The other run throughs attempted to explore the possibility of the game by simply selecting the responses that seemed most in line with the main text being displayed. This seemed to result in a very quick playthrough ( although perhaps this was due to my quickly selecting my gut response), which was interesting. I'm not sure what it means but just thought I should note it as a half-formed though I had while playing, maybe it will be useful.
+
+_______________________________________________________________________________________________________
+
+Michael Thomét
+
+I've been playing your game and trying to figure it out, but I know so little Portuguese that it's tough at times. Of course, you're not expecting people to know the language already. It's interesting to see code switching at this level in a piece, since most people don't get exposed to that kind of thing, so I did find that interesting, and sometimes used that to understand the Portuguese better. Still, I found myself, as I often do, very frustrated with the hypertext. There are three things I generally don't like in hypertext. One is looping. When I get to a passage I've already been to, it feels like I've failed and don't know what I'm doing. Second is endings. Endings in hypertext can often come out of nowhere, and they feel very much like the piece is telling you to go away. It's worse than looping because you have to do everything over again to choose another path. Third, and related to these points, is links that don't flow from one to the next. Often in hypertext I can't connect where I've just been with the new passage. These were all present in your piece.
+
+The first two are hallmarks of hypertext, but last one less so, so I can understand the first two being there. The biggest problem I have is that, because my understanding of Portuguese is so low, I can't understand what a link is suggesting. Further, even when Portuguese isn't a problem ( I can understand a little of it), the links didn't usually match with the passages.So, from one passage to the next, I couldn't understand what was going on. This might be what you were going for, so it might be interesting to find that at one point I felt like I had made sense of a set of passages, but then it abruptly ended, and up to that there had been no indication that it would happen.
+
+I'd also like to say that the breaks in which an exercise appeared really took me out of the game. I couldn't tell what to do, and it almost seemed like it didn't expect me to do anything but wait for the continue button to appear. The translate the sentence nodes didn't seem to work. There was a blur on the screen that changed, and I could highlight to read the text, but it didn't seem proper. In any event, they always seemed out of place and made me forget what was going on.
+
+_______________________________________________________________________________________________________
+
+Dylan
+
+I really liked the piece, and I think the concept of imitating language learning software is really strong.
+
+First a couple of things that I disliked:
+
+Didn't like the "translate this" textbox. Maybe I missed something, but it didn't seem to feed back into the piece in anyway. I saw the blurred letters changing, but couldn't get them to unblur. On one playthrough I just banged on my keyboard to see if it mattered, and it didn't seem to.
+
+I liked the part where you had to drag words into a sentence (For me it was "Ela ficou com os primos, num bairro dentro da cidade." if that helps you pin down which node I'm talking about) but was occasionally frustrated when they wouldn't go where I wanted. It didn't seem like they were blocked, just that the implementation was a little glitchy. If they are intended to be placed in certain ways, perhaps to simulate challenges speaking, that would be interesting but I'd like it to be a little more obvious. As it was, it felt like a glitch.
+
+Then things I did like:
+
+I really liked the writing. Switching between languages leads to some lovely phrases. This may just be the order I happened to get, but one time through it felt like the early nodes were written in a very simple-English style, exactly the way beginner language learning lessons are; small words, short sentences, no complicated clauses. This changed rather abruptly, but I think maybe gradually escalating the complexity of the prose would be a nice goal. Perhaps not feasible with the way the nodes are connected.
+
+I really liked the sense of place and identity, but I think I was also drawing on my memories of your piece last year. They seem to be pretty related, and I think playing that helped inform my experience of this one. I'm not sure what you should do with that, but I thought I'd share.
+
+_______________________________________________________________________________________________________
+
+Ben
+
+What follows is a series of comments I have after playing We Arrived / Chegamos.  Thanks so much for sharing this with us!
+
+-- On the title screen, I'm really intrigued by the way that hovering over the text suppresses that portion, rather than showing it.  This inversion puts me in an interesting spot where I'm choosing what to hide, rather than choosing what to show.  I really like this act of suppression - along with the blurry text - and wish that this sort of interaction featured more heavily in the following lines of the piece.
+-- I'm not sure what my interaction is doing or what the space in which the narrative takes place in is. It seems to generally be a space of recollection and memory, but then suddenly shifts to present tense, 'here'-located spaces that seem disconnected. The difficulty in establishing a sense of place makes it difficult for me to understand what the narrative meaning of my choices are within the system.
+-- I really enjoy the page where it asks me to translate the sentence (although I don't think the fuzzy text is doing too much for you here), and the sentence cycles back and forth on its own between the two languages.  It puts me in a situation where I'm not sure from which language I'm supposed to be translating from, and it unroots me from my own language - a very satisfying little experience of confusion here.
+-- I think - if translation, language learning, and language learning software are key to the way you're approaching the narrative - that you can incorporate the activities more corely into the narrative experience.  Currently, they seem to be serving a different function than the more narratively aligned sections, and this comes off as jarring.  I think they could be really useful too, particularly things like the image pages for expressing more imagery and multiplicity of meaning in your narrative.
+-- I'm currently reading your handling of the language learning structures as having a tone of irony to it.  If this is the case, you may want to consider embracing it more and even using something like a quiz structure at the end of the narrative to reflect/evaluate on the memories and experiences previously covered.
+-- Again on the topic of language-learning structures, I think that you are currently embracing them at a visual and superficial level, but I'm not getting a lot of the underlying pacing that language-learning lessons contain.  I think you could use these structures of [present information]-[evaluate information], scaled difficulty across the piece, and generally a shift from single-word and image associations at the beginning to more grammar oriented things at the end to empower your narrative structure.  The narrative looks like language learning, but if you make it feel like language learning as well, there can be more of a coming to terms or understanding synthesized from the piece than I'm currently getting.
+-- The experience is fairly disorienting at the moment, so I think you could do some more hand-holding in the first few opening pages to set the context and starting point for the piece more fully.  I would recommend approaching the first couple of pages like a tutorial, so that the player can get adjusted to the experience.
+-- I like the way that the piece is short enough to play through multiple times.  It gives it the feeling of traveling to a place that doesn't change, but each trip there is alienating and regret-filled in a different way.  It's sort of like treading on thin ice and there's always something dangerous in front of you for you to trip up on.  I think part of this feeling and pressure comes from the fact that the final screens are very brief.  It makes them feel sort of like 'game over' screens.
+-- To better establish place and tone, I would recommend more sense imagery and details.  I think the most important thing though is understanding the impact of my choices.  Once I know how I am affecting the space and state of the narrative, I can start to feel better embedded within the space.
+-- The narrative doesn't seem to have a distinct flow from beginning to end.  I find myself entering loops that I can pass through over and over again.  This seems to contradict the themes of limited time-of-stay in the piece.
+
+I look forward to discussing things in more detail tomorrow.
+
+_______________________________________________________________________________________________________
+
+Barrett
+
+Thanks for sharing your piece.  I like the delayed fadeout over the text on the opening page.  The fact that it worked off of the opposite of the position of the mouse cursor was interesting.  Last year I worked on an experiment related to "covert attention", or paying attention to things that you are not looking at. This was already a neat but disorienting trick - I wonder how the effect would feel if it worked off of gaze tracking.  I also noticed that I could get the text by mousing over, but that felt like cheating. I also did Google translate a few of the early entries, but stopped for the same reason.  After that, though, I wasn't sure what to do.  My high school Spanish class turned out to be no help at all with the Portuguese, no surprise.  Overall, I'd say it felt intriguing but inaccessible - but maybe just because I didn't want to break the rules.
+
+_______________________________________________________________________________________________________
+
+Stacey
+
+Here are my thoughts on your piece as I play it (a text Let’s Play, if you will):
+
+First thing when I loaded it, Google offered to translate it for me. I resisted, but I suspect you may not want Google’s interference, so you might want to either find a way to disable it or want players.
+
+First Playthrough:
+
+Ok, there’s a lot of Portuguese that I don’t understand (I have a little Spanish, but that almost makes it worse). I get a strong sense of confusion, and I want to understand. This desire to understand gets more intense the more I play.
+
+Reading about family, I feel a great sense of loss and a lack of connection with the family. The words you’ve chosen in English here are very powerful and evocative, which keeps me invested and trying. I want a connection with Vovo that I just can’t seem to fully have.
+
+“Click and drag to form a sentence”
+        This section gave me a lot of grief. I couldn’t get the right words to stick where I wanted them. That was more frustrating than not being able to translate! ;)
+
+“Type what you hear”
+        No idea. I skipped it, ashamed.
+
+Second Playthrough:
+
+I choose “Myself” rather than “my mother” this time. Is it just me or am I understanding more?
+By the time I get to the section about talking to Julia, all of the options are English. I feel I’m starting to piece things together, but there’s still a lot I don’t understand.
+
+"But I still remember sitting outside her grandfather’s house três anos atrás.”
+        I notice a choice "We sat there for hours, three years ago.” This is the first time it occurs to me that maybe I should be trying to choose the path that provides something like a translation and not the one I want to know more about (as I had been). I also realize I have chosen links I understood (more likely to be English or mixed languages with cognates I can figure out).
+
+A few nodes later I decide “no, I’ll just keep choosing evocative ones after all.”
+
+By the end of the third play through, I’m feeling like I only marginally understand things better, I see a lot of the same content, so I break down and hit the translate button on Chrome for the 4th play through:
+
+Fourth Playthrough:
+Oh wow, things are WAY DIFFERENT when you understand everything! I now feel able to make informed decisions about my choices. I feel much more powerful, and the choices feel like choices and not like I’m just selecting things at random.
+
+Oh my god, the writing is so powerful, and I feel such a sense of sadness that I couldn’t experience it before. In some ways not understanding the Portuguese was actually shielding me from a deeper pain. The sadness I felt at the detachment from family was nothing compared to understanding the chasm between my character and my sister. This writing is really great. I changed my mind; you should definitely leave Google translate in (but disable on first play through?) or slowly translate the selections on subsequent playthroughs.
+
+One thing I would have liked is a sense of feedback on the parts that felt like Rosetta Stone. They don’t even have to be actual “this is right” or not feedback, but something that feels like my choice isn’t just going off into the void.
+
+Happy to answer questions, and I hope this helps!
+
+_______________________________________________________________________________________________________
+
+Noah
+
+I think this is a really interesting experiment.
+
+I also see what you mean (I think) about having a choice to make. You're working in a form that suggests things like comprehension, testing, and mastery, but right now you're not really working with those elements much in terms of how the piece functions. Similarly, you're suggesting parts of a story, but you're not giving us enough to feel like we can start to comprehend (much less master) it as a narrative. 
+
+Here's my instinct. I think you should:
+	- Actually work with the forms you're suggesting. Tell people if they're right or wrong at the "quizzes" (using it as an opportunity for more story content) and send people who are "wrong" too often to quicker endings.
+	- Reward people who get things "right" (I would suggest this be people who appear to try at all) by giving them longer-form texts that help them get a clearer handle on the narrative.
+	- Have different endings for different sorts of engagement. Have them suggest that the shorter, more poetic, less mastery-oriented versions of the story may actually better capture something at the heart of things, even if the others provide more traditional fictional rewards.
+
+I would also suggest that, if you keep the choice between "my mother" and "myself" at the outset, you do more with it. For example, I would consider presenting a strong fictional moment from the point of view of each character immediately after the choice -- one which suggests what is at stake for that character. I would also suggest that the endings come back to this juxtaposition of the two characters, assuming it is key to the piece. 
+
+Consider also trying to give some of the sense people get from knowing a little of the Portuguese to people who are reading only in English. Mouseover is the way that occurs to me, but I'm sure there are others.
+
+Of course, you could go a totally different direction. These are just my instincts. It could be that you actually want to move even further from the interface metaphor of language learning, rather than engaging it more deeply. But I lean the other way because I think its metaphors of comprehension and mastery could actually work really well for the ways that people try to engage stories like this one.
+
+Anyway, I'd be happy to talk with you about this further.
+
+Best,
+Noah
+
+
+
+=== Notes written during play ===
+
+I thought the opening was suitably mysterious -- and then I really liked the way that Google offered to translate the first choice page for me!
+
+I chose "myself" at the first choice page.
+
+Because mousing over changed things on the opening page and the first choice page, I was surprised that mousing over had no impact on the third page. I'm wondering: Is there a significance to which pages it works on?
+
+I chose the button that seemed like a translation of "I crossed the border in an airplane" -- mostly because I wanted to see where things were going, and the others seemed like they might take things off track.
+
+Then, on the next page, nothing seems like a translation of "I tried to order a soda." The option of interacting as though this is language learning software goes away pretty quick  :-)
+
+I choose Guarana, because at least it feels "on topic."
+
+It says, "Occasionally I'm able to convince someone." I'm guessing this means, "Convince them I'm going home, not visiting." I choose "Usually with food."
+
+It says, "And when I'm truly able to speak." This piece of language is hard for me to interpret, and the choices below don't really help. Two are in Portuguese (or seem that way to me) and the other two say, "Speaking with giria" and, "Biting local tongues, trying to buy me a drink."
+
+"Truly able to speak" seems empowered. "Biting local tongues" feels the opposite. Maybe this is set up to feel deliberately destabilized. But I feel like I'm still trying to get my bearings with the piece.
+
+I choose "Speaking with giria" (side note: a picky person like me thinks perhaps every choice should have final punctuation, or not, at least on a page-by-page basis).
+
+The response: "Prazer. You speak well." I choose: "Obrigada, with an a…"
+
+It seems like maybe something is going on with Luiz. He was in the option I chose, he hurries to open the passenger door in one of my next choices, there's a "we" leaving the house in another choice and I can pretend to have left alone. I choose the leaving the house option.
+
+Next I get "Translate the sentence" -- with gray letters, blurred out and shifting, below. But it looks like one of the shifts is through "I wanted to stay home." So I type that in.
+
+I get: "I was much younger then. I don't remember myself." The tantalizing sense that I was going to get some idea of that part of the story appears to have been wrong. Or maybe we'll circle back to it? I choose the option that ends, "that fractured night."
+
+I get "Our moods are conflicted this time" and the options give me the sense it's not Luiz any more, but Julia. I choose the one that begins, "I watch her study."
+
+I choose the one that ends, "She told me that she still thinks about it." For the first time, just before clicking, it occurs to me to wonder if these different choices actually have different results -- and, if so, when? I had been assuming I was getting a particularly disjointed experience because I wasn't choosing the things that led me along a more traditional experience strand. But what if the "choices" are mostly all along the same line, and I'm just choosing what to emphasize to myself as I move along? What if there is no opening to this piece that is not this unstable?
+
+Going meta like this bumps me up another level. I start thinking about why the language learning software. I start thinking about the different backgrounds -- was all I experienced before somehow "in the airplane"? Am I now in Julia's room? My outlook is undecidable, with what I know so far. So I go ahead and click.
+
+Now I'm back at the quiz. I see "I feel mute" in the blurred text, and decide to type it in. Though next time I think I might be "wrong" on purpose. For now I'm wondering if these translation moments are what come up every time I try to follow up on an interpersonal moment.
+
+An interface note: I tried hitting return after typing in "I feel mute." It didn't submit the form, but it might be a nice touch if it did.
+
+Then "typing what I hear." And then back to the blue (airplane?) background, with "I am left with my paling, solitary voyage." I find myself drawn more to the options that feel like natural continuations of that prompt ("To imagine what must have…" and "As if I had a reason…") and less drawn to those that don't (the Portuguese, but also "I could be mais forte…" and "Running through word…").
+
+I choose "To imagine…"
+
+I get another prompt to type a sound. Are these meant to feel like mental deflections? Or would the sounds I'm hearing be evocative if I knew some Portuguese? Am I being invited to type words that relate to the current part of the story?
+
+Next I click and drag words to form a sentence. I make a sentence in dire need to punctuation: "she stayed living with cousins teaching them in a neighborhood within the city"
+
+I get: "She taught English e morava em São Paulo."
+
+I'm starting to wonder: What is at stake in this story? Obviously there is something about family -- my first choice was between "myself" and the mother. There is obviously also something about language, particularly Portuguese and English. And something about Brazil and somewhere English-speaking (I think the US -- if I remember the section with Julia well enough). 
+
+There is also a struggle. I have to struggle to grasp even a little of the story. Perhaps this reflects a struggle to tell the story. And somehow a language-software-like interface is the right way to tell it. Perhaps because the learning, teaching, and/or misunderstanding and mixing of language is key to what it is all about. 
+
+But I feel like I've stumbled (nearly) long enough. I'm in danger of disengaging from the experience -- which I'm guessing is not the feeling you want me to have at this point in the piece (though I could be wrong). I want the piece to grip me soon. This could be with the traditional tools of fiction -- it could be that I'm wondering about a mystery only partially revealed, such as what will happen to a character, or why someone acted the way they did, or something else. Or I could be gripped in some other way -- maybe I start to understand how the system of the piece works, and want to experiment with different ways I might engage it. But something should grip me.
+
+Back to the piece, I notice I have another background, like looking out a window. I choose "I couldn't have known."
+
+I get: "Take care. Be careful. Toma cuidado." I'm back to the starting background. It asks me "Play again?"
+
+Wow. I was near a/the end, when I thought I was right at the point that things were going to start to build. Maybe I was wrong, or maybe the way the piece builds is through multiple play throughs. I play again.
+
+I choose "myself" again, but this time exploring other options. I say it was a boat rather than a plane. I find myself at the window background that ended things last time. I choose the option ending "We were four" (four people? four years old?). It says "We owned a loja." and I choose what looks like a translation. 
+
+It says: "It was a grocery store, what you might call a mercearia, supermercado." One of the options says, "Aren't those English words?" and I kind of want to correct it to "Shouldn't those be English words?" But I have to assume the choice is deliberate. I choose the option with no English words.
+
+The next page says, "But I still remember sitting outside her grandfather’s house três anos atrás." We're back to the starting background. I have no idea whose grandfather we're talking about. I choose another option with no English.
+
+For the first time, I'm invited to choose an image. For "VIDRO." I choose the only image with people in it (and just their feet).
+
+Now I'm to click and drag words to form the sentence "I picture myself wearing a baptism dress." I drag three Portuguese words and then hit "continue."
+
+It says, "But so much time passes between visits." I don't know what the "But" is in contrast to. But so much time passes that baptism doesn't make sense? I choose another option with no English.
+
+I'm back to "Take care. Be careful. Toma cuidado." This one seemed to do less to build a sense of story than last time. But that could be because the Portuguese words in the options I chose were important to the sense of story, so I steered away from building anything by choosing words I didn't even have a hint as to the meaning of.
+
+Of course, I play again.
+
+I find myself wondering if state is preserved when I choose to play again. Do my choices last time remove or add possibilities to this time?
+
+I choose "my mother."
+
+Strangely, I find myself at the window, at the page I got after contradicting "myself" to say it was a boat rather than a plane. I decide to try making the same choices, to see if I will follow the same path as "my mother" that I did as "myself."
+
+It turns out that I can! Suddenly, the choice between my mother and myself, which seemed so significant before, seems no more important than other choices. I really thought it was a divider, before, between two different experiences, perhaps set in different time periods.
+
+I play again.
+
+I choose "my mother" and then the "seasick" option. Then the "gleaming edge." Then "couldn't stay." Then the "small house." Then "I twisted." Then I'm in the airplane, as "myself," with the words: "I wish I could think about Bisavô the way my mother could." I choose what looks like the translation. The next sentence doesn't feel like it follows. ("Antes, ela foi lá to say goodbye to her avó.") I choose "They were together all the time." 
+
+I get a different ending: "This is all I remember."
+
+I wonder: What is different between the "take care" ending and the "all I remember" ending? Is it that I have made a connection between the mother's story and the daughter's? 
+
+Again, I find myself wondering about the goals of the piece. So far my experience is much more fragmented than the rapid serial visualization poetry piece. I find myself wondering if that is deliberate, or if it is an unexpected outgrowth of the form you're working with, or if it's an idiosyncrasy of the choices I've happened to make. 
+
+I find myself wishing for longer passages of text, perhaps with some sort of "reading comprehension" quiz at the bottom. I don't know if I'm wishing for them because I feel that you don't have space to say the different sorts of things you want to say as a writer, or if I just want something more traditional to cling to as a reader.
+
+I decide to play again. But I have to admit that, if I were finding this piece in a different context, I'd probably decide I was done right now -- even though I'd still be wondering what the piece is about.
+
+I choose the mother and "five years." Then "staring out the strange window." Then "que sair." Then "incredible sense of regret." Then I find myself with Julia, as I had earlier. I choose "dissatisfied." Then the grandfather's house. I choose "three years ago" and go back to Julia's room, with the line making more sense than it did last time I got to it. ("We're farther apart here, in her room.") I choose "I'm selfish." I choose "With my child voice." I choose "seasonable sweaters." I'm a bit excited that I'm somehow managing not to be shunted to an ending. I choose "it will never taste this way." I choose "patiently to the airport" because I chose "sense of regret" before. 
+
+Now I'm asked to put another sentence together. I'm not sure these words can go together. I notice that this time one of them is capitalized, which I think is a change. I realize there is no sentence that can use all the words. Last time I thought I was to use all the words. I don't know how to translate the Portuguese, so I make the sentence, "She came but hadn't visited." 
+
+Then back to the maybe-airplane. The sentence, "When I speak to Vovô, I only listen, happy to humor him." I'm amazed I'm not at an ending. I choose "brought back to my childhood." I'm asked to arrange Portuguese words as a translation of "The second house is the one you'd remember." I skip it. I think, again, what a different experience this must be for someone with at least a little sense of both languages. I wonder if you should use mouseover to translate? I think I might get a greater richness of the piece.
+
+I get: "O outro quintal de anos atrás." I choose the most evocative language: "You asked me about that house, but I couldn't say."
+
+Now I'm to choose an image for "GRÁVIDA." I choose the women sitting together. I get: "Quando ela estava grávida." I choose, "When her feet were swollen" (and I wonder what "Handing him blades of grass" is doing there). 
+
+I get, "It's hard to talk about the times she went back." I guess this means it's hard for the mother to talk about the times she went back? Maybe the person with the swollen feet is the grandmother? Who is the "Vovô" person? The grandfather? 
+
+What story is being told, and why is it being told?
+
+I choose, "Because she has my mind and remembers people." Now I'm supposed to type what I hear for another sound without significance to me. I put in random letters and continue. It doesn't respond any differently than when I tried.
+
+Why are there quizzes with no responses? Couldn't the responses be another interesting way to communicate the story? 
+
+Now I'm back at arranging the words about staying with the cousins in the city.
+
+Wow. This is getting to be one of my longest sessions without an ending. I choose "she could have stayed." I get: "Why did she leave?" I choose: "And I know she didn't…" Now I'm supposed to type another sound.
+
+I'm at a place I've been, again: "I am left with my paling, solitary voyage." I choose: "To imagine what…" Now I'm supposed to type another sound. Are they coming up more often because I'm blowing them off? Now back to arranging the words about staying with the cousins.
+
+I choose: "Era Paulista." I get, again, the arranging of words about staying with cousins in the city. Back to "She taught English…" A deliberate loop?
+
+I choose "I don't know." Back to "Why did she leave?" I choose "I'm not sure…" And now the ending I got before: "This is all I remember." 
+
+Given the amount of repetition I'm getting, I think I'm going to call this my complete play for now.
+
+_______________________________________________________________________________________________________
+
+NOTES FROM CLASS
+
+Ben - Engaging language learning structures. Curious about how they're being used beyond appearance. Sense of irony but not sure -- examine more about the pacing of the language learning structures. COnfused about high level structure -- progression towards the end or continuity across? Little moments of pleasure that were nice. Uprooting.
+
+Dylan - Liked the concept of imitating language learning software. Liked the beginning, where the early nodes were simple English, and then it felt like it got too complicated too fast. Gradually increasing the complexity would be really nice. Liked in relation to your other piece. 
+
+Adam - Liked it, but was very very confused. Quickly railroaded, but then subsequent playthroughs had Goog Translate. Liked the stories, but ran into a few loops. Endings were really abrupt!! Jarring. Language software translation passages were nice. Never able to identify the image questions. 
+
+Stacey - Writing was really powerful. Felt a sense of confusion, but also a sadness in the words that I did understand. Frustrating. On fourth playthrough, did Google Translate. The translation accesses a deeper game. Lack of understanding, connection to family, culture. Liked the visuals, but there was a lack of feedback, so it made me wonder what was happening mechanically. 
+
+Squinky - Missing a lot of content until Google Translation, but then had access through Google Translate. Like details about writing, atmospheric sense of place. Feels like they're there. Built in translation mechanism would be really interesting. Button for switching english to portuguese or vice versa. 
+
+Joe - Decided that he wasn't going to open up Google Translate. But felt like he only got a surface read, but felt as if more depth would come from translation. Having tried language learning software, the one aspect that the piece doesn't bring in is the "this word means this..." Maybe you should include definitions. 
+Johnathan - Liked this piece, and liked the discovery element of language. There could be some feedback on the language learning aspects. Needs more feedback in translation exercises. It wasn't until six playthroughs that Google Translation happened
+
+Wes - Loved branching story structure, but couldn't tell underlying mechanism. Multiple playthroughs were necessary. Needs something to entice you more to get you to play again. Maybe evaluative playfully, and enticing you to "take on the next level" -- wanted the text used in the narrative to have some effect, not just thrown away
+
+Hope - liked the images, but had a hard time seeing them and wanted it to be amplified. Had a hard time making a connection, and wasn't able to follow one story. Mixing of the language could be intentional and effective. Building language learning software could be nice in collaboration, but the skill here is the story. 
+
+Marcelo - Different set of feedback -- works completely differently for him. Structurally and narratively, the mixture creates an almost third language. Almost like a new code that is learned when playing. Wants to fix on either language and has to keep creating a new language in every sentence. 
+
+Sarah - Likes the idea, and it adds an expressive dimension to language learning. Not sure what your intentions were in terms of the degree of language learning. The triumph of the piece is exploring the story, much like being in a foreign place, you glean pieces of what's going on. The start should ramp up. 
+
+Matthew - Google Translate happened -- felt like someone had taken a sharpie and redacted the Portuguese, but the translate button felt like it opened up most of the story space.
+
+James - felt like a puzzle, but then translated, it felt like collaborative storytelling. Loved the language learning software idiom, but took a while to grasp. Priming to emphasize the feeling of being inadequate in a language. Played a lot like It Had to Be With You. Not sure how choices are affecting things. Curious about the underlying decision making. Some repetition in playthrough. 
+
+Barrett - observation -- the very first screen: the one that comes into focus is not the one where you place your mouse. "When your gaze is elsewhere" - the other thing is when the fuzziness is used in translation was neat
+
+Michael - weird experience - could kind of guess what a lot of things were, and in that way I felt like I wanted to be able to use context clues for cohesive reading. I think I followed a story arc to the end. Felt like there were three stories, and the backgrounds were significant. Hypertext in general is frustrating-- connections that don't seem to connect
+
+Adrian - never seen or used language learning software. But got a strong sense of trying to reconnect with language/ cultural heritage. Trying to balance, using combinations, switching back and forth. More of a poetic experience than literal translations. Several playthroughs were necessary. Likes the scene with the airplane, and the awkwardness of trying to translate
+
+
+DISCUSSION
+
+language learning elements and mechanics related to that
+
+"make the sentence" - drag and drop was successful
+the button to flip everything would be great (Device 6 esque)
+
+hover translation would be super effective here
+
+ramp up with translation would be nice to push this language learning aspect
+
+feedback aspect is super necessary - if it's correct or not, however you experience this
+
+the nature of this piece is very different from language learning software
+the "translation button" might make things too simple
+
+wants it to be much simpler at the beginning
+
+lack of feedback could have been intentional
+but this decision should be important
+
+feeling inadequate in learning a language
+
+othered by Portuguese
+
+saw the lack of feedback as intentional
+
+what if the feedback was slightly opaque - affects which screen pops up next
+
+at the moment when you reach the end of a playthrough, it would be nice to have evaluative feedback
+
+instant immersion language learning software "Who is Oscar Lake?"
+
+"if you use the translate button too much, you won't be able to complete the game"
+
+translation is not the same as language learning
+
+Google Translate kind of invades your website
+
+translating this kind of text is kind of impossible
+
+it's important to realize that when you translate the page, it's not the same thing as "you are now able to understand Portuguese"
+
+the majority of the time, there is not a direct translation
+
+knowing multiple languages means that you get into the cultural/expressive aspects of that language
+
+learning how meaning is made in another language versus just learning that language
+
+the experience of the "in between" person versus the native speaker or the english speaker
+
+the curve that you want to slowly make people pass through -- ramping up
+
+* authorial experience of proficiency within the language
+
+biggest challenge is to have the piece mirror the author's experience -- and have this be relatable to both types of players (native speakers and english speakers)
+
+sound design!!!
+
+make this experience comfortable for people -- so that they feel comfortable stumbling through the language learning/ translation process (this happens very slowly at first)
+
+there should probably be more english to start with
+
+themes that were seen in relation to the piece
+
+is this meant to go both ways? (english speakers trying to learn portuguese and vice versa)
+
+maybe it's more about people trying to learn the narrator's experience
+
+having the piece facilitate rather the learning of experience rather than learning of the language
+
+approaches the piece as a narrative rather than language learning (using language to convey a certain kind of narrative)
+
+felt familiar, while still not being able to understand everything
+
+not just about language -- it's the relationship between family, roots, language, memory
+
+the "quick translate button" would undermine the fact that this language is important
+
+intended for an audience that can understand one or the other
+
+the only choices that can be picked are english choices, if you don't translate
+
+muddling around -- is there some better way to control this?
+
+how to facilitate replayability
+
+at first play, the story seems to be about learning portuguese, rather than "this is really what it's about: narrative, the experience" -- how can this be pushed more in the first playthrough?
+
+no concept of where the portuguese choices might take me (trying to project where choices might take me)
+
+**** needs more sound ****
+
+there were a few screens where you type out the phrase -- need to implement the special characters
+
+memory and roots -- an element there that you could push with multiple playthroughs -- maybe you get the same word in english as you go farther through the story?
+
+context for helping understand the translation / sound
+
+Wes - comment about the story itself -- wanted more of a narrative thread. It felt like fragments from a dream, but wanted something that drew me along for longer
+
+Ben - more sense imagery would help to fill out the context - also, lessons that use narrative structure
+
+
+
+
+CHANGES
+
+- make transitions:
+	- endings less abrupt
+	- continuity within the story (where answers are reflected on the subsequent pages and you can see the juxtapositions between questions before and after)
+	- user feedback for the exercises
+
+- retool the actual structure of the story
+	- loops
+	- ramp up questions (easier in the beginning)
+	- more straightforward stories, less switching
+
+- fix drag and drop question
+
+- translate button or mechanism
+
+- sound!!!!
+
+
+My problem here is that a lot of these seem peripheral rather than integral or essential. I want to figure out what might be the essential changes or edits. Perhaps this would be the structure of the story, but I have no way of knowing what effect this restructuring will have.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

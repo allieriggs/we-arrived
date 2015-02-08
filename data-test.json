@@ -1,0 +1,281 @@
+{
+	"start": {
+		"type": "draggable-choice",
+		"image": "window",
+		"message": "The second house is the one you'd remember.",
+		"link": "mudo",
+		"answer": "Acasa",
+		"choices": [
+			{
+				"text": "A",
+				"correct": "false"
+			},
+			{
+				"text": "casa",
+				"correct": "false"
+			},
+			{
+				"text": "minha",
+				"correct": "false"
+			},
+			{
+				"text": "lembranças",
+				"correct": "false"
+			},
+			{
+				"text": "uvas",
+				"correct": "false"
+			},
+			{
+				"text": "tem sentido",
+				"correct": "false"
+			},
+			{
+				"text": "lembrar",
+				"correct": "false"
+			},
+			{
+				"text": "a primeira",
+				"correct": "false"
+			},
+			{
+				"text": "filha",
+				"correct": "false"
+			},
+			{
+				"text": "morávamos",
+				"correct": "false"
+			},
+			{
+				"text": "ficar",
+				"correct": "false"
+			}
+		]
+	},
+	"mudo": {
+		"type": "changing-choice",
+		"image": "leaves",
+		"message": "Translate the sentence",
+		"link": "queria",
+		"text": "Sinto-me mudo.",
+		"translation": "I feel mute.",
+		"correct": "false"
+	},
+	"queria": {
+		"type": "sound-choice",
+		"image": "leaves",
+		"message": "Type what you hear",
+		"link": "bairro",
+		"choices": [
+			{
+				"text": "PT",
+				"img": "play",
+				"audio": "eu_queria_ficar_pt",
+				"correct": "false"
+			},
+			{
+				"text": "SLOW",
+				"img": "turtle",
+				"audio": "eu_queria_ficar_pt",
+				"correct": "false"
+			}
+		]
+	},
+	"bairro": {
+		"type": "draggable-choice",
+		"image": "leaves",
+		"message": "Ela ficou com os primos, num bairro dentro da cidade.",
+		"link": "soda",
+		"choices": [
+			{
+				"text": "stayed",
+				"correct": "false"
+			},
+			{
+				"text": "city",
+				"correct": "false"
+			},
+			{
+				"text": "she",
+				"correct": "false"
+			},
+			{
+				"text": "in",
+				"correct": "false"
+			},
+			{
+				"text": "them",
+				"correct": "false"
+			},
+			{
+				"text": "cousins",
+				"correct": "false"
+			},
+			{
+				"text": "a",
+				"correct": "false"
+			},
+			{
+				"text": "with",
+				"correct": "false"
+			},
+			{
+				"text": "teaching",
+				"correct": "false"
+			},
+			{
+				"text": "living",
+				"correct": "false"
+			},
+			{
+				"text": "neighborhood",
+				"correct": "false"
+			},
+			{
+				"text": "the",
+				"correct": "false"
+			},
+			{
+				"text": "within",
+				"correct": "false"
+			}
+		]
+	},
+	"soda": {
+		"type": "text-choice",
+		"image": "plane",
+		"message": "I tried to order a soda.",
+		"choices": [
+			{
+				"text": "Tentei. Quero... quiría... I can't remember.",
+				"correct": "false",
+				"link": "prazer"
+			},
+			{
+				"text": "Guaraná. The faithful brand.",
+				"correct": "false",
+				"link": "prazer"
+			},
+			{
+				"text": "I exchange pleasantries.",
+				"correct": "false",
+				"link": "prazer"
+			},
+			{
+				"text": "It's a pleasure.",
+				"correct": "false",
+				"link": "prazer"
+			}
+		]
+	},
+	"prazer": {
+		"type": "text-choice",
+		"image": "plane",
+		"message": "Prazer. You speak well.",
+		"choices": [
+			{
+				"text": "I'll just say thank you.",
+				"correct": "false",
+				"link": "pregnant"
+			},
+			{
+				"text": "Obrigada, with an “a,” just like Luiz told me.",
+				"correct": "false",
+				"link": "pregnant"
+			},
+			{
+				"text": "Fala bem.",
+				"correct": "false",
+				"link": "pregnant"
+			},
+			{
+				"text": "How are you?",
+				"correct": "false",
+				"link": "pregnant"
+			},
+			{
+				"text": "From which bairro? It must be slang.",
+				"correct": "false",
+				"link": "pregnant"
+			}
+		]
+	},
+	"pregnant": {
+		"type": "image-choice",
+		"image": "leaves",
+		"message": "Choose the image for GRÁVIDA",
+		"choices": [
+			{
+				"img": "monica",
+				"correct": "false",
+				"link": "boxes"
+			},
+			{
+				"img": "nilda-painting",
+				"correct": "false",
+				"link": "boxes"
+			},
+			{
+				"img": "map",
+				"correct": "false",
+				"link": "boxes"
+			}
+		]
+	},
+	"boxes": {
+		"type": "image-choice",
+		"image": "leaves",
+		"message": "Choose the image for ENCAIXOTADO",
+		"choices": [
+			{
+				"img": "keyhole",
+				"correct": "false",
+				"link": "vidro"
+			},
+			{
+				"img": "ufba",
+				"correct": "false",
+				"link": "vidro"
+			},
+			{
+				"img": "bondinho",
+				"correct": "false",
+				"link": "vidro"
+			}
+		]
+	},
+	"vidro": {
+		"type": "image-choice",
+		"image": "leaves",
+		"message": "Choose the image for VIDRO",
+		"choices": [
+			{
+				"img": "oca",
+				"correct": "false",
+				"link": "end"
+			},
+			{
+				"img": "salvador-view",
+				"correct": "false",
+				"link": "end"
+			},
+			{
+				"img": "ufba-pond",
+				"correct": "false",
+				"link": "end"
+			}
+		]
+	},  
+	"end": {
+		"type": "text-choice",
+		"image": "leaves",
+		"message": "This is the end. You have no choice.",
+		"choices": [
+			{
+				"text": "Play again?",
+				"correct": "false",
+				"link": "start"
+			}
+		]
+	}
+}

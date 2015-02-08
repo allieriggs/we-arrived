@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>We Arrived / Chegamos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="jquery-ui.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href='http://fonts.googleapis.com/css?family=Fira+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<script src="jquery.min.js"></script>
+  <script src="jquery-ui.min.js"></script>
+  <script src="jquery.animate-textshadow.js"></script>
+
+  <script content="text/javascript">
+    var endings = ["end", "end2", "end3", "end4"];
+    var data;
+    var timeOut;
+    var screen;
+    
+    function showScreen(screen_name) {
+      var screen = data[screen_name];
+
+      $("html").css('background-image', 'url("images/'+screen['image']+'.png")');
+
+      $("#message").text(screen['message']);
+      $("#choices").empty();
+      $( "#skip" ).css('display', 'none');
+      
+      
+      // If this is the start screen
+      if (screen['type'] == 'start-choice') {
+
+        stopTimeout();
+
+        $("#choices").append('<div class="start-text">'+screen['text']+'</div>');
+        $("#choices").append('<div class="start-translation">'+screen['translation']+'</div>');
+
+        $( "#start" ).css('display', 'inline-block');
+
+        $("#start").click(function() {
+            showScreen(screen['link']);
+            $( "#start" ).css('display', 'none');
+        });
+
+        $(".start-text").css('text-shadow', '#000 0 0 10px');
+        $(".start-text").css('color', 'transparent');
+
+        $(".start-translation").css('text-shadow', '#000 0 0 10px');
+        $(".start-translation").css('color', 'transparent');
+
+        $(".start-text").hover(function() {
+            $(".start-translation").animate({ textShadow: "#000 0 0 0" });
+          }, function() {
+            $(".start-translation").animate({ textShadow: "#000 0 0 10px" });
+        });
+
+        $(".start-translation").hover(function() {
+            $(".start-text").animate({ textShadow: "#000 0 0 0" });
+          }, function() {
+            $(".start-text").animate({ textShadow: "#000 0 0 10px" });
+        });
+
+      }
+
+      // If the screen is a the select screen
+      if (screen['type'] == 'select-choice') {
+
+        stopTimeout();
+
+        $.each(screen['choices'], function(key, choice) {
+          $("#choices").append('<div class="choice" onmouseover="$(this).text(\''+choice['translation']+'\');" onmouseout="$(this).text(\''+choice['text']+'\');" onclick="showScreen(\''+choice['link']+'\')">'+choice['text']+'</div>');
+
+        });
+         
+      }
+
+      // If the screen is a text multiple choice category
+      if (screen['type'] == 'text-choice') {
+
+        stopTimeout();
+
+        $.each(screen['choices'], function(key, choice) {
+          $("#choices").append('<div class="choice" onclick="showScreen(\''+choice['link']+'\')">'+choice['text']+'</div>');
+        });
+
+      }  
+      
+      // If the screen is an image multiple choice category
+      if (screen['type'] == 'image-choice') {
+
+        stopTimeout();
+        
+        $.each(screen['choices'], function(key, choice) {
+          
+          $("#choices").append('<div class="choice" onclick="showScreen(\''+choice['link']+'\')">'+'<img class="choice-image" src="images/'+choice['img']+'.jpg"/>'+'</div>');
+        });
+      }
+
+      // If the screen is a sound question
+      if (screen['type'] == 'sound-choice') {
+
+        stopTimeout();
+        pressEnter();
+
+        $( "#sound-input" ).show();
+
+        $.each(screen['choices'], function(key, choice) {
+          
+          $("#choices").append('<div class="choice" id="'+choice['text']+'-div">'+'<img class="choice-image" src="images/'+choice['img']+'.png"/>'+'<audio id="'+choice['text']+'" controls="controls" style="display:none;">'+'<source src="audio/'+choice['audio']+'.mp3" type="audio/mpeg" />'+'</audio>'+'</div>');
+
+        });
+
+        $("#PT").trigger('load');
+        $("#PT").trigger('play');
+
+        $("#PT-div").click(function() {
+          $("#PT").trigger('play');
+        });
+
+        $("#SLOW-div").click(function() {
+          document.getElementById("SLOW").defaultPlaybackRate = 1.0;
+          document.getElementById("SLOW").play();
+
+          document.getElementById("SLOW").playbackRate = 0.5;
+          
+        });
+
+        startTimeout();
+
+      }
+
+      // If the screen is a shifting translation choice question
+      if (screen['type'] == 'changing-choice') {
+        stopTimeout();
+        pressEnter();
+
+        $( "#sound-input" ).show();
+
+        $("#choices").append('<div class="changing-choice">'+screen['text']+'</div>');
+
+        var choiceText = $(".changing-choice");
+
+        choiceText.disableSelection();
+
+        choiceText.css('color', 'transparent');
+        choiceText.css('text-shadow', '#aaa 0 0 10px');
+
+        
+        (function showTranslation() {
+          //blur text and translate
+          choiceText.delay(1500).animate({ 
+            textShadow: "#aaa 0 0 7px"
+
+          }, 1000, function () {
+            $(this).text(screen['translation']);
+            console.log("translated");
+          });
+
+          //return to normal and return to original text
+          choiceText.delay(1500).animate({ 
+            textShadow: "#aaa 0 0 13px"
+
+          }, 1000, function () {
+            $(this).text(screen['text']);
+            console.log("untranslated");
+            showTranslation();
+          });
+        }());
+        
+        startTimeout();
+
+      }
+
+      // If the screen is a click and drag choice question
+      if (screen['type'] == 'draggable-choice') {
+
+        stopTimeout();
+        $( "#droppable" ).append('<p>Click and drag the words to form a sentence.</p>');
+        $( "#droppable" ).show();
+        $.each(screen['choices'], function(key, choice) {
+          
+          $("#choices").append('<li class="drag-choice">'+choice['text']+'</li>'); 
+
+        });
+
+        $("#choices").removeClass("disabled");
+
+        /*$(".drag-choice").draggable({ 
+            containment: '.choices-container',
+            snap: "#droppable-inner, .drag-choice", 
+            snapTolerance: 20,
+            revert: 'invalid',
+        });
+        
+        $( "#droppable" ).droppable({
+          hoverClass: "droppable-hover",
+          accept: ".drag-choice",
+          activeClass: "droppable-default",
+          drop: function( event, ui ) {
+            $( this )
+              .addClass( "droppable-highlight" )
+              .find( "p" )
+                .html( "" );
+            setTimeout(function() {
+              $( "#skip" ).css('display', 'inline-block');
+            }, 5000);
+            $("#skip").click(function() {
+                $("#droppable").replaceWith(dropClone);
+                showScreen(screen['link']);
+            });
+          } 
+        }); */
+
+        $("#choices").sortable({
+          connectWith: "#droppable",
+          helper: "",
+          revert: "invalid",
+          cancel: ".disabled",
+          start: function (event, ui) {
+            var $item = ui.helper;
+            $item.css({ 'height': $('#choices li').height() });
+          },
+          stop: function (event, ui) {
+
+          }
+        });
+
+        $('#droppable').sortable({
+          placeholder: "drag-choice-placeholder",
+          tolerance: "pointer",
+          distance: 30,
+          connectWith :'#choices',
+          revert: true,
+          cursor: "move",
+          forcePlaceholderSize: true,
+          items: "li",
+          drop: function (event, ui) {
+          },
+          stop: function (event, ui) {
+            var $obj = $(ui.item);
+          },                    
+        });
+
+        /*function showAnswer() {
+          var sentence = "";
+          $.each($("#droppable li"), function(key, item) {
+            sentence += $(item).text();
+          });
+            console.log(sentence);
+          if (sentence == screen['answer']) { 
+            $( "#skip" ).css('display', 'inline-block');
+            showScreen(screen['link']);
+          }
+        } */
+
+        startTimeout();  
+
+      }
+
+      function startTimeout() {
+        timeOut = setTimeout(function() { onTimeout(); }, 5000);
+      }
+
+      function onTimeout() {
+        $( "#skip" ).css('display', 'inline-block');
+        
+        $("#skip").click(function() {
+          $("#droppable").empty();
+          $( "#droppable" ).hide();
+          $( "#sound-input" ).hide();
+          $( "#choices" ).addClass("disabled");
+          $( "form" ).find("input[type=text], textarea").val("");
+          $( ".changing-choice" ).stop( true, true );
+          showScreen(screen['link']);
+        });
+      }
+        
+      function stopTimeout() {
+        clearTimeout(timeOut);
+      } 
+
+      function pressEnter() {
+        $(window).keydown(function(e){
+
+          if(e.keyCode == 13){
+
+            e.preventDefault();
+            return false;
+          }
+
+        });
+      } 
+      
+    }
+    
+    $.getJSON( "data.json", function( d ) {
+      data = d;
+      // preload background images
+      $.preloadImages(
+        "images/bed.png",
+        "images/leaves.png",
+        "images/plane.png",
+        "images/window.png"); 
+      // show the choices
+      showScreen("start"); 
+    });
+
+
+    $.preloadImages = function() {
+      for (var i = 0; i < arguments.length; i++) {
+        $("<img />").attr("src", arguments[i]);
+      }
+    }
+
+
+
+  </script>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="choices-container">
+          
+          <div id="message"></div>
+          <div id="choices"></div>
+          <div id="droppable"></div>
+          <form action="" method="post" id="sound-input">
+            <p><input type="text" name="sound-text" id="sound-text"/></p>
+          </form>
+          <div id="skip">Continue</div>
+          <div id="start">Start // Iniciar</div>
+
+      </div> <!-- end choices-container -->
+
+    </div> <!-- end container -->
+
+
+  </body>
+
+
+</html>
