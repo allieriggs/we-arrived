@@ -1,5 +1,5 @@
 {
-	"start": {
+	"house": {
 		"type": "draggable-choice",
 		"image": "window",
 		"message": "The second house is the one you'd remember.",
@@ -141,7 +141,7 @@
 			}
 		]
 	},
-	"soda": {
+	"start": {
 		"type": "text-choice",
 		"image": "plane",
 		"message": "I tried to order a soda.",

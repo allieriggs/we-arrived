@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>We Arrived / Chegamos</title>
+    <title>We Arrived / Chegamos Test</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="jquery-ui.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -14,6 +14,7 @@
   <script content="text/javascript">
     var endings = ["end", "end2", "end3", "end4"];
     var data;
+    var dictionary;
     var timeOut;
     var screen;
     
@@ -80,7 +81,32 @@
         stopTimeout();
 
         $.each(screen['choices'], function(key, choice) {
-          $("#choices").append('<div class="choice" onclick="showScreen(\''+choice['link']+'\')">'+choice['text']+'</div>');
+
+          // split messages into an array of words
+          var splitWords = choice['text'].split(" ");
+          $("#choices").append('<div id="'+key.toString()+'" class="choice" onclick="showScreen(\''+choice['link']+'\')"></div><br />');
+
+          $.each(splitWords, function(wordKey, wordValue) {
+            
+            var printValue = wordValue.replace('*',' ');
+            var newSpan = $('<span></span>').html(printValue+' ');
+            
+            $("#"+key.toString()+".choice").append(newSpan);
+            
+            var slug = convertToSlug(wordValue);
+            
+            if (slug in dictionary) {
+              var translation = dictionary[slug];
+
+              newSpan.hover(function() {
+                newSpan.text(wordValue.replace(slug, translation)+" ");
+              }, function() {
+                newSpan.text(printValue+' ');
+              });  
+            }
+            
+          });
+        
         });
 
       }  
@@ -277,6 +303,19 @@
         
       function stopTimeout() {
         clearTimeout(timeOut);
+      }
+
+      function convertToSlug(Text) {
+          return Text
+
+              .replace(/\./g,'')
+              .replace(',','')
+              .replace('?','')
+              .replace('!','')
+              .replace(';','')
+              .replace(':','')
+              .replace('(','')
+              .replace(')','');
       } 
 
       function pressEnter() {
@@ -303,6 +342,10 @@
         "images/window.png"); 
       // show the choices
       showScreen("start"); 
+    });
+
+    $.getJSON( "dictionary.json", function( d ) {
+      dictionary = d;
     });
 
 

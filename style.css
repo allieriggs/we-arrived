@@ -22,9 +22,8 @@ body {
 .choices-container {
 	height: 400px;
 	width: 800px;
-	margin: 0 auto;
+	margin: 100px auto 0;
 	position: relative;
-	top: 100px;
     text-align: center;
    	border: none;
    	background-color: #FFF;
@@ -34,7 +33,7 @@ body {
    	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
-	padding: 100px 20px 30px;
+	padding: 50px 20px 30px;
 }
 
 #choices {
@@ -189,7 +188,7 @@ input {
 	text-decoration: none;
 	color: #000; 
 	float: left;
-	cursor: pointer;    				
+	cursor: default;    				
 }
 
 .start-translation {
@@ -199,7 +198,7 @@ input {
 	text-decoration: none;
 	color: #000;
 	float: right;
-	cursor: pointer;     				
+	cursor: default;     				
 }
 
 #start {

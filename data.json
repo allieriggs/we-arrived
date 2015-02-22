@@ -8,19 +8,17 @@
 		"translation": "Comece aqui, confuso e inseguro de suas escolhas.  Você pode traduzir, ou pode bater a cabeça, aprendendo ou clicando.  Talvez vai dar certo, mas isso não é uma prova.  Tente denovo."
 	},
 	"select": {
-		"type": "select-choice",
+		"type": "text-choice",
 		"image": "leaves",
 		"message": "Select the translation",
 		"choices": [
 			{
-				"text": "eu mesmo",
-				"translation": "myself",
+				"text": "eu*mesmo",
 				"correct": "true",
 				"link": "airplane"
 			},
 			{
-				"text": "minha mãe",
-				"translation": "my mother",
+				"text": "minha*mãe",
 				"correct": "false",
 				"link": "boat"
 			}
