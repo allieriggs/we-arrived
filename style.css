@@ -10,6 +10,14 @@ body {
     text-align: center;
     margin: 0;
     font-family: 'Fira Sans', sans-serif;
+}
+
+.no-select {
+	-ms-user-select: none; /* IE 10+ */
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   user-select: none;
 } 
 
 .container {
@@ -33,7 +41,7 @@ body {
    	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
-	padding: 50px 20px 30px;
+	padding: 50px 20px 40px;
 }
 
 #choices {
@@ -55,6 +63,7 @@ body {
 	-moz-background-clip: padding;    
   	-webkit-background-clip: padding;  
   	background-clip: padding-box;
+  	white-space: nowrap;
 }
 
 .drag-choice-placeholder {
@@ -112,8 +121,15 @@ body {
 }
 
 #message {
-	font-size: 2em;
 	margin-bottom: 40px;
+}
+
+.regularMessage {
+	font-size: 1.7em;
+}
+
+.startMessage {
+	font-size: 2em;
 }
 
 #droppable {
@@ -158,6 +174,18 @@ input {
   border-radius: 5px;
   font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0; 
+}
+
+#answerBottom {
+	display: none;
+	font-size: 1.7em;
+	color: #7ac525;
+}
+
+#answerTop {
+	display: none;
+	font-size: 1.7em;
+	color: #7ac525;
 }
 
 #skip {

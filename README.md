@@ -1,2 +1,0 @@
-# we-arrived
-Thesis

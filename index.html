@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>We Arrived / Chegamos Test</title>
+    <meta name="google" value="notranslate" /> 
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="jquery-ui.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -10,38 +12,38 @@
 	<script src="jquery.min.js"></script>
   <script src="jquery-ui.min.js"></script>
   <script src="jquery.animate-textshadow.js"></script>
+  <script src="levenshtein.js"></script>
 
   <script content="text/javascript">
     var endings = ["end", "end2", "end3", "end4"];
     var data;
     var dictionary;
     var timeOut;
-    var screen;
+    var question;
+    var sentence; 
+
     
-    function showScreen(screen_name) {
-      var screen = data[screen_name];
+    function showQuestion(question_name) {
+      question = data[question_name];
 
-      $("html").css('background-image', 'url("images/'+screen['image']+'.png")');
+      $("html").css('background-image', 'url("images/'+question['image']+'.png")');
 
-      $("#message").text(screen['message']);
+      $("#message").text(question['message']);
       $("#choices").empty();
       $( "#skip" ).css('display', 'none');
       
       
-      // If this is the start screen
-      if (screen['type'] == 'start-choice') {
+      // If this is the start question
+      if (question['type'] == 'start-choice') {
 
         stopTimeout();
 
-        $("#choices").append('<div class="start-text">'+screen['text']+'</div>');
-        $("#choices").append('<div class="start-translation">'+screen['translation']+'</div>');
+        $("#message").addClass('startMessage');
 
-        $( "#start" ).css('display', 'inline-block');
+        $("#choices").append('<div class="start-text">'+question['text']+'</div>');
+        $("#choices").append('<div class="start-translation">'+question['translation']+'</div>');
 
-        $("#start").click(function() {
-            showScreen(screen['link']);
-            $( "#start" ).css('display', 'none');
-        });
+        $( "#start" ).css('display', 'inline-block');        
 
         $(".start-text").css('text-shadow', '#000 0 0 10px');
         $(".start-text").css('color', 'transparent');
@@ -63,33 +65,33 @@
 
       }
 
-      // If the screen is a the select screen
-      if (screen['type'] == 'select-choice') {
+      // If the question is a the select question
+      if (question['type'] == 'select-choice') {
 
         stopTimeout();
 
-        $.each(screen['choices'], function(key, choice) {
-          $("#choices").append('<div class="choice" onmouseover="$(this).text(\''+choice['translation']+'\');" onmouseout="$(this).text(\''+choice['text']+'\');" onclick="showScreen(\''+choice['link']+'\')">'+choice['text']+'</div>');
+        $.each(question['choices'], function(key, choice) {
+          $("#choices").append('<div class="choice" onmouseover="$(this).text(\''+choice['translation']+'\');" onmouseout="$(this).text(\''+choice['text']+'\');" onclick="showQuestion(\''+choice['link']+'\')">'+choice['text']+'</div>');
 
         });
          
       }
 
-      // If the screen is a text multiple choice category
-      if (screen['type'] == 'text-choice') {
+      // If the question is a text multiple choice category
+      if (question['type'] == 'text-choice') {
 
         stopTimeout();
 
-        $.each(screen['choices'], function(key, choice) {
+        $.each(question['choices'], function(key, choice) {
 
           // split messages into an array of words
           var splitWords = choice['text'].split(" ");
-          $("#choices").append('<div id="'+key.toString()+'" class="choice" onclick="showScreen(\''+choice['link']+'\')"></div><br />');
+          $("#choices").append('<div id="'+key.toString()+'" class="choice"></div><br />');
 
           $.each(splitWords, function(wordKey, wordValue) {
             
             var printValue = wordValue.replace('*',' ');
-            var newSpan = $('<span></span>').html(printValue+' ');
+            var newSpan = $('<span class= "tinyWords" id="'+wordKey.toString()+'"></span>').html(printValue+' ');
             
             $("#"+key.toString()+".choice").append(newSpan);
             
@@ -98,39 +100,64 @@
             if (slug in dictionary) {
               var translation = dictionary[slug];
 
-              newSpan.hover(function() {
+              /*newSpan.hover(function() {
                 newSpan.text(wordValue.replace(slug, translation)+" ");
               }, function() {
                 newSpan.text(printValue+' ');
-              });  
-            }
-            
+              }); */
+
+              newSpan.css('color', 'transparent');
+              newSpan.css('text-shadow', '#aaa 0 0 3px');
+
+              translateSlug(key, wordKey, printValue+' ', wordValue.replace(slug, translation)+" ");
+
+            }   
           });
+
+          // When you click on a choice, it displays its text value as your answer
+          $("#choices #"+key.toString() ).click(function() {
+
+            if ($.inArray(question_name, endings) != -1) {
+              handleClick(choice['link'], "" );
+            }
+
+            else {
+              handleClick(choice['link'], $(this).text() );
+            }
+          
+          }); 
         
         });
 
       }  
       
-      // If the screen is an image multiple choice category
-      if (screen['type'] == 'image-choice') {
+      // If the question is an image multiple choice category
+      if (question['type'] == 'image-choice') {
 
         stopTimeout();
         
-        $.each(screen['choices'], function(key, choice) {
+        $.each(question['choices'], function(key, choice) {
           
-          $("#choices").append('<div class="choice" onclick="showScreen(\''+choice['link']+'\')">'+'<img class="choice-image" src="images/'+choice['img']+'.jpg"/>'+'</div>');
+          $("#choices").append('<div id="'+key.toString()+'" class="choice">'+'<img class="choice-image" src="images/'+choice['img']+'.jpg"/>'+'</div>');
+
+          $("#choices #"+key.toString() ).click(function() {
+
+            handleImage(choice['link'], key);
+          
+          });
+
         });
       }
 
-      // If the screen is a sound question
-      if (screen['type'] == 'sound-choice') {
+      // If the question is a sound question
+      if (question['type'] == 'sound-choice') {
 
         stopTimeout();
         pressEnter();
 
         $( "#sound-input" ).show();
 
-        $.each(screen['choices'], function(key, choice) {
+        $.each(question['choices'], function(key, choice) {
           
           $("#choices").append('<div class="choice" id="'+choice['text']+'-div">'+'<img class="choice-image" src="images/'+choice['img']+'.png"/>'+'<audio id="'+choice['text']+'" controls="controls" style="display:none;">'+'<source src="audio/'+choice['audio']+'.mp3" type="audio/mpeg" />'+'</audio>'+'</div>');
 
@@ -155,14 +182,14 @@
 
       }
 
-      // If the screen is a shifting translation choice question
-      if (screen['type'] == 'changing-choice') {
+      // If the question is a shifting translation choice question
+      if (question['type'] == 'changing-choice') {
         stopTimeout();
         pressEnter();
 
         $( "#sound-input" ).show();
 
-        $("#choices").append('<div class="changing-choice">'+screen['text']+'</div>');
+        $("#choices").append('<div class="changing-choice">'+question['text']+'</div>');
 
         var choiceText = $(".changing-choice");
 
@@ -178,8 +205,7 @@
             textShadow: "#aaa 0 0 7px"
 
           }, 1000, function () {
-            $(this).text(screen['translation']);
-            console.log("translated");
+            $(this).text(question['translation']);
           });
 
           //return to normal and return to original text
@@ -187,8 +213,7 @@
             textShadow: "#aaa 0 0 13px"
 
           }, 1000, function () {
-            $(this).text(screen['text']);
-            console.log("untranslated");
+            $(this).text(question['text']);
             showTranslation();
           });
         }());
@@ -197,13 +222,17 @@
 
       }
 
-      // If the screen is a click and drag choice question
-      if (screen['type'] == 'draggable-choice') {
+      // If the question is a click and drag choice question
+      if (question['type'] == 'draggable-choice') {
 
         stopTimeout();
+        $( "#sound-input" ).hide();
+        $("#droppable").empty();
+        $("#droppable").removeClass("disabled");
         $( "#droppable" ).append('<p>Click and drag the words to form a sentence.</p>');
         $( "#droppable" ).show();
-        $.each(screen['choices'], function(key, choice) {
+
+        $.each(question['choices'], function(key, choice) {
           
           $("#choices").append('<li class="drag-choice">'+choice['text']+'</li>'); 
 
@@ -232,7 +261,7 @@
             }, 5000);
             $("#skip").click(function() {
                 $("#droppable").replaceWith(dropClone);
-                showScreen(screen['link']);
+                showQuestion(question['link']);
             });
           } 
         }); */
@@ -246,6 +275,9 @@
             var $item = ui.helper;
             $item.css({ 'height': $('#choices li').height() });
           },
+          out: function (event, ui) {
+            handleChoices();
+          },
           stop: function (event, ui) {
 
           }
@@ -258,102 +290,297 @@
           connectWith :'#choices',
           revert: true,
           cursor: "move",
+          cancel: ".disabled",
           forcePlaceholderSize: true,
           items: "li",
-          drop: function (event, ui) {
+          out: function (event, ui) {
+            handleAnswer();
           },
           stop: function (event, ui) {
             var $obj = $(ui.item);
           },                    
-        });
-
-        /*function showAnswer() {
-          var sentence = "";
-          $.each($("#droppable li"), function(key, item) {
-            sentence += $(item).text();
-          });
-            console.log(sentence);
-          if (sentence == screen['answer']) { 
-            $( "#skip" ).css('display', 'inline-block');
-            showScreen(screen['link']);
-          }
-        } */
-
-        startTimeout();  
+        });  
 
       }
-
-      function startTimeout() {
-        timeOut = setTimeout(function() { onTimeout(); }, 5000);
-      }
-
-      function onTimeout() {
-        $( "#skip" ).css('display', 'inline-block');
-        
-        $("#skip").click(function() {
-          $("#droppable").empty();
-          $( "#droppable" ).hide();
-          $( "#sound-input" ).hide();
-          $( "#choices" ).addClass("disabled");
-          $( "form" ).find("input[type=text], textarea").val("");
-          $( ".changing-choice" ).stop( true, true );
-          showScreen(screen['link']);
-        });
-      }
-        
-      function stopTimeout() {
-        clearTimeout(timeOut);
-      }
-
-      function convertToSlug(Text) {
-          return Text
-
-              .replace(/\./g,'')
-              .replace(',','')
-              .replace('?','')
-              .replace('!','')
-              .replace(';','')
-              .replace(':','')
-              .replace('(','')
-              .replace(')','');
-      } 
-
-      function pressEnter() {
-        $(window).keydown(function(e){
-
-          if(e.keyCode == 13){
-
-            e.preventDefault();
-            return false;
-          }
-
-        });
-      } 
       
+    } // end of showQuestion
+
+    // translate stuff in text choice categories 
+    function translateSlug(choiceId, wordId, english, portuguese) {
+      //blur text and translate
+      var span = $("#choices #"+choiceId.toString()+" #"+wordId.toString());
+      
+      span.delay(Math.random()*1500 + 500).animate({ 
+        textShadow: "#aaa 0 0 2px"
+
+      }, Math.random()*1000 + 500, function () {
+        $(this).text(english);
+      });
+
+      //return to normal and return to original text
+      span.delay(Math.random()*1500 + 500).animate({ 
+        textShadow: "#aaa 0 0 7px"
+
+      }, Math.random()*1000 + 500, function () {
+        $(this).text(portuguese);
+        translateSlug(choiceId, wordId, english, portuguese);
+      });
+    }
+
+    // convert the answer from the drag and drop question to a sentence value
+    function showAnswer() {
+      var sentence = "";
+      $.each($("#droppable li"), function(key, item) {
+        sentence += $(item).text() + " ";
+      });
+        
+      console.log(sentence);
+      return sentence;
+      /*if (sentence == question['answer']) { 
+        $( "#skip" ).css('display', 'inline-block');
+        showQuestion(question['link']);
+      } */
+    }
+
+    // if there are no words in the droppable area, don't show the Continue button
+    function handleChoices() {
+      if (showAnswer() == ""){
+        // There's... there's no words on it!
+        $( "#skip" ).css('display', 'none');
+        stopTimeout();
+      }
+    }
+
+    // if something has been removed from the droppable area so that there aren't any words in it, don't show the Continue button
+    function handleAnswer() {
+      if (showAnswer() == ""){
+        // There's... there's no words on it!
+        $( "#skip" ).css('display', 'none');
+        stopTimeout();
+      }
+      else {
+        if ($( "#skip" ).css('display') == 'none') {
+          startTimeout();
+        }  
+      }
+    }
+
+    // start the timeout function and run it for 3 seconds
+    function startTimeout() {
+      timeOut = setTimeout(function() { onTimeout(); }, 3000);
+    }
+
+    // attaches the timeout function to the Continue button
+    function onTimeout() {
+      $( "#skip" ).css('display', 'inline-block');
     }
     
-    $.getJSON( "data.json", function( d ) {
-      data = d;
-      // preload background images
-      $.preloadImages(
-        "images/bed.png",
-        "images/leaves.png",
-        "images/plane.png",
-        "images/window.png"); 
-      // show the choices
-      showScreen("start"); 
-    });
-
-    $.getJSON( "dictionary.json", function( d ) {
-      dictionary = d;
-    });
-
-
-    $.preloadImages = function() {
-      for (var i = 0; i < arguments.length; i++) {
-        $("<img />").attr("src", arguments[i]);
-      }
+    // stops the timeout function  
+    function stopTimeout() {
+      clearTimeout(timeOut);
     }
+
+    // converts a string to a slug, ignoring punctuation
+    function convertToSlug(Text) {
+      return Text
+
+      .replace(/\./g,'')
+      .replace(',','')
+      .replace('?','')
+      .replace('!','')
+      .replace(';','')
+      .replace(':','')
+      .replace('(','')
+      .replace(')','');
+    } 
+
+    // disables the enter button on forms
+    function pressEnter() {
+      $(window).keydown(function(e){
+
+        if(e.keyCode == 13){
+
+          e.preventDefault();
+          //return false;
+          handleClick(question['link'], "");
+
+        }
+      });
+    }
+
+    // pastes answer at the bottom, cues fading effect, and sends you to the next screen
+    function handleClick(link, answerText) {
+
+      stopTimeout(); 
+
+      var sentence = answerText;
+      var correctSentence;
+      var correctAnswer = true;
+
+      if (question['type'] == 'start-choice') {
+        $( "#start" ).css('display', 'none');
+      }
+
+      else if (question['type'] == 'draggable-choice') {
+        sentence = showAnswer();
+      }
+
+      else if (question['type'] == 'sound-choice' || question['type'] == 'changing-choice') {
+        sentence = $( "#sound-text" ).val();
+        correctSentence = question['translation'];
+
+        // Use Levenshtein to compare the distance between typed answer and correct answer
+        var l = new Levenshtein (sentence, correctSentence);
+        var levenshteinVal = l.distance;
+        
+        if (question['type'] == 'sound-choice') {
+          
+          if (levenshteinVal > 10) {
+            correctAnswer = false;
+          }
+          else {
+            correctAnswer = true;
+          }
+        }
+
+        // For changing choice, accept either the English or Portuguese
+        else if (question['type'] == 'changing-choice') {
+          
+          correctSecondary = question['text'];
+          var k = new Levenshtein (sentence, correctSecondary);
+          var secondaryVal = k.distance;
+          var minLevenshtein = Math.min(levenshteinVal, secondaryVal);
+
+          if (minLevenshtein > 10) {
+            correctAnswer = false;
+          }
+          else {
+            correctAnswer = true;
+          }
+
+        }
+        
+      }
+
+      $( "#answerTop" ).empty();
+      $( "#answerTop" ).hide();
+      $( "#answerBottom" ).empty();
+      $( "#answerBottom" ).show();
+      $( "#answerBottom" ).html('<span>'+sentence+'</span>');
+      $( "#answerBottom" ).css('margin-top', '10px');
+      $( "#skip" ).hide();
+      $( "#choices" ).addClass("disabled");
+      $( "#droppable" ).addClass("disabled");
+      $( "form" ).find("input[type=text], textarea").val("");
+      $( ".changing-choice" ).stop( true, true );
+      $( "#choices .tinyWords" ).stop( true, true );
+
+      setTimeout(function() {
+        $( "#droppable" ).fadeOut();
+        $( "#choices" ).fadeOut();
+        $( "#sound-input" ).fadeOut();
+      }, 1000);
+
+      setTimeout(function() {
+        $( "#answerTop" ).fadeOut();
+        $( "#message").fadeOut();
+      }, 2000);
+
+      setTimeout(function() {
+        $( "#answerBottom" ).empty();
+        $( "#answerBottom" ).hide();
+        $( "#skip" ).hide();
+        $( "#answerTop").empty();
+        $( "#answerTop" ).show();
+        $( "#answerTop" ).html('<span>'+sentence+'</span>');
+        
+        $( "#droppable" ).empty();
+        $( "#droppable" ).hide();
+        $( "#message").fadeIn();
+        $( "#choices" ).fadeIn();
+        $("#message").removeClass('startMessage');
+        $("#message").addClass('regularMessage');
+        
+        if (correctAnswer) {
+          showQuestion(link);
+        }
+        else {
+          showQuestion(question['badLink']);
+        }
+
+      }, 3000);
+    }
+
+    // handles the animation when an image question is clicked
+    function handleImage(link, key) {
+      var h = 150;
+      var w = 200;
+      stopTimeout();
+
+      $('#choices div:not( #'+key.toString()+')').fadeOut();
+
+      // enlarge
+      setTimeout(function() {
+        $("#choices #"+key.toString()+" img").animate({
+          top: "-=" + Math.floor(h * 0.5),
+          left: "-=" + Math.floor(w * 0.5),
+          width: Math.floor(w * 1.5),
+          height: Math.floor(h * 1.5)
+        },function(){
+        });
+      }, 1000);
+
+      setTimeout(function() {
+        $( "#answerTop" ).fadeOut();
+        $( "#message").fadeOut();
+        $( "#choices #"+key.toString()).fadeOut();
+      }, 3000);
+
+      setTimeout(function() {
+        $( "#message").fadeIn();
+        $( "#choices" ).fadeIn();
+        showQuestion(link);
+
+      }, 4000);
+
+    }
+
+    $(function() {  
+      
+      // handles the Continue button click 
+      $("#skip").click(function() {
+        handleClick(question['link'], "");
+      });
+
+      // handles the Start button click
+      $("#start").click(function() {
+        handleClick(question['link'], "");
+      });
+    
+    
+      $.getJSON( "data-test.json", function( d ) {
+        data = d;
+        // preload background images
+        $.preloadImages(
+          "images/bed.png",
+          "images/leaves.png",
+          "images/plane.png",
+          "images/window.png"); 
+        // show the choices
+        showQuestion("start"); 
+      });
+
+      $.getJSON( "dictionary.json", function( d ) {
+        dictionary = d;
+      });
+
+
+      $.preloadImages = function() {
+        for (var i = 0; i < arguments.length; i++) {
+          $("<img />").attr("src", arguments[i]);
+        }
+      }
+    });
 
 
 
@@ -365,12 +592,14 @@
     <div class="container">
       <div class="choices-container">
           
+          <div id="answerTop"></div>
           <div id="message"></div>
-          <div id="choices"></div>
-          <div id="droppable"></div>
+          <div id="choices" class="no-select"></div>
+          <div id="droppable" class="no-select"></div>
           <form action="" method="post" id="sound-input">
             <p><input type="text" name="sound-text" id="sound-text"/></p>
           </form>
+          <div id="answerBottom"></div>
           <div id="skip">Continue</div>
           <div id="start">Start // Iniciar</div>
 

@@ -945,19 +945,14 @@
 				"link": "why"
 			},
 			{
-				"text": "Se ficasse, I don't know.",
+				"text": "Era Paulista. Se ficasse, I don't know.",
 				"correct": "false",
-				"link": "why"
+				"link": "bairro"
 			},
 			{
 				"text": "I couldn't have known.",
 				"correct": "false",
 				"link": "end"
-			},
-			{
-				"text": "Era Paulista.",
-				"correct": "false",
-				"link": "bairro"
 			}
 		]
 	},
@@ -990,11 +985,6 @@
 				"text": "Was she Brasilian? Brasilera, como pensei.",
 				"correct": "false",
 				"link": "lost"
-			},
-			{
-				"text": "I'm not sure what I thought.",
-				"correct": "false",
-				"link": "end2"
 			}
 		]
 	},
@@ -1080,14 +1070,9 @@
 		"message": "She didn't tell me much about that time.",
 		"choices": [
 			{
-				"text": "I have these patches of story.",
+				"text": "I have these patches of story. Her passeios and mine.",
 				"correct": "false",
 				"link": "house"
-			},
-			{
-				"text": "I piece together her passeios and mine.",
-				"correct": "false",
-				"link": "growing"
 			},
 			{
 				"text": "Her well wishes, our ligações no eskype.",
@@ -1191,14 +1176,9 @@
 				"link": "soda"
 			},
 			{
-				"text": "Algo para paracer competente.",
+				"text": "Algo para paracer competente. As if I had a reason to travel here.",
 				"correct": "false",
 				"link": "hedge"
-			},
-			{
-				"text": "As if I had a reason to travel here.",
-				"correct": "false",
-				"link": "end"
 			}
 		]
 	},
@@ -1578,6 +1558,7 @@
 		"image": "leaves",
 		"message": "Translate the sentence",
 		"link": "end2",
+		"badLink": "end",
 		"text": "Depois de todos esses anos.",
 		"translation": "After all these years.",
 		"correct": "false"
@@ -1587,6 +1568,7 @@
 		"image": "leaves",
 		"message": "Translate the sentence",
 		"link": "convince",
+		"badLink": "end",
 		"text": "De onde você é?",
 		"translation": "Where are you from?",
 		"correct": "false"
@@ -1596,6 +1578,7 @@
 		"image": "leaves",
 		"message": "Translate the sentence",
 		"link": "truly",
+		"badLink": "end",
 		"text": "Estou aqui, na cozinha da minha avó.",
 		"translation": "I'm here, in my grandmother's kitchen.",
 		"correct": "false"
@@ -1605,6 +1588,7 @@
 		"image": "leaves",
 		"message": "Translate the sentence",
 		"link": "end2",
+		"badLink": "end",
 		"text": "Tomo um gole lentamente. Você não está perdida de jeito nenhum.",
 		"translation": "I sip slowly. You are not lost, you are not lost.",
 		"correct": "false"
@@ -1614,6 +1598,7 @@
 		"image": "leaves",
 		"message": "Translate the sentence",
 		"link": "then",
+		"badLink": "end",
 		"text": "Eu queria ficar em casa.",
 		"translation": "I wanted to stay home.",
 		"correct": "false"
@@ -1623,6 +1608,7 @@
 		"image": "leaves",
 		"message": "Translate the sentence",
 		"link": "voltou",
+		"badLink": "end",
 		"text": "Sinto-me mudo.",
 		"translation": "I feel mute.",
 		"correct": "false"
@@ -1632,6 +1618,8 @@
 		"image": "leaves",
 		"message": "Type what you hear",
 		"link": "upset",
+		"badLink": "end",
+		"translation": "Eu queria ficar",
 		"choices": [
 			{
 				"text": "PT",
@@ -1652,6 +1640,8 @@
 		"image": "leaves",
 		"message": "Type what you hear",
 		"link": "voyage",
+		"badLink": "end",
+		"translation": "Ela voltou",
 		"choices": [
 			{
 				"text": "PT",
@@ -1672,6 +1662,8 @@
 		"image": "leaves",
 		"message": "Type what you hear",
 		"link": "bairro",
+		"badLink": "end",
+		"translation": "Minha mãe",
 		"choices": [
 			{
 				"text": "PT",

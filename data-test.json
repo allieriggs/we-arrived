@@ -1,4 +1,12 @@
 {
+	"start": {
+		"type": "start-choice",
+		"image": "leaves",
+		"message": "We Arrived // Chegamos",
+		"link": "house",
+		"text": "Begin here, confused and unsure of your choices.  You can translate, or muddle your way through, learning or clicking.  Maybe you're right, but this is no quiz.  Try again.",
+		"translation": "Comece aqui, confuso e inseguro de suas escolhas.  Você pode traduzir, ou pode bater a cabeça, aprendendo ou clicando.  Talvez vai dar certo, mas isso não é uma prova.  Tente denovo."
+	},
 	"house": {
 		"type": "draggable-choice",
 		"image": "window",
@@ -57,6 +65,7 @@
 		"image": "leaves",
 		"message": "Translate the sentence",
 		"link": "queria",
+		"badLink": "end",
 		"text": "Sinto-me mudo.",
 		"translation": "I feel mute.",
 		"correct": "false"
@@ -66,6 +75,8 @@
 		"image": "leaves",
 		"message": "Type what you hear",
 		"link": "bairro",
+		"badLink": "end",
+		"translation": "Eu queria ficar",
 		"choices": [
 			{
 				"text": "PT",
@@ -141,7 +152,7 @@
 			}
 		]
 	},
-	"start": {
+	"soda": {
 		"type": "text-choice",
 		"image": "plane",
 		"message": "I tried to order a soda.",
